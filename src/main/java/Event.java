@@ -5,7 +5,7 @@ public class Event {
   private int mEventType;
   private int mEventLength; //(length in days, 0 valid input for partial day event lasting less than 6 hours total)
 
-  public Event(String eventName, String eventDate, String eventVenue, int eventType, int eventLenth) {
+  public Event(String eventName, String eventDate, String eventVenue, int eventType, int eventLength) {
     mEventName = eventName;
     mEventDate = eventDate;
     mEventVenue = eventVenue;
