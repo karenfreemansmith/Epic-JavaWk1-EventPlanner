@@ -18,6 +18,6 @@ public class Event {
   }
 
   public String getEventVenue() {
-    return "";
+    return mEventVenue;
   }
 }
