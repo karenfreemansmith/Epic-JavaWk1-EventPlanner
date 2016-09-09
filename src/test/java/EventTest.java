@@ -6,7 +6,10 @@ public class EventTest {
 
   @Before
   private void initialize() {
-    mEvent = new Event();
+    mEvent = new Event("JavaMania - West");
   }
 
+  public void getEventName_returnsName_String() {
+    assertEquals("JavaMania - West", mEvent.getEventName());
+  }
 }
