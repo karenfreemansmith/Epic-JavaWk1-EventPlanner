@@ -6,9 +6,6 @@ by [Karen Freeman-Smith](https://github.com/karenfreemansmith)
 ## Description
 A program estimate cost for various types of events
 
-### Screenshot:
-![project Screenshot](/screenshot.jpg)
-
 ### Specifications:
 | Behavior                                           | Input                    |  Output                                                             |
 |----------------------------------------------------|--------------------------|---------------------------------------------------------------------|
