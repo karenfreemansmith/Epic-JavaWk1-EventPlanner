@@ -4,6 +4,7 @@ public class Event {
 
   public Event(String eventName, String eventDate) {
     mEventName = eventName;
+    mEventDate = eventDate;
   }
 
   public String getEventName() {
@@ -11,6 +12,6 @@ public class Event {
   }
 
   public String getEventDate() {
-    return "";
+    return mEventDate;
   }
 }
