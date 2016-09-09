@@ -106,7 +106,7 @@ public class EventTest {
 
   @Test
   public void getSavingsSuggestions_returnsTwoSuggestions_Array() {
-    String[] suggestions = { "eliminate meal (saves $1,500,000)", "reduce snacks (saves $450,000)" };
+    String[] suggestions = { "eliminate meal (saves $1500000)", "reduce drinks (saves $600000)" };
     assertEquals(suggestions, mEvent.getSavingsSuggestions());
   }
 

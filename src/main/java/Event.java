@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Event {
   private String mEventName;
   private String mEventDate;
@@ -140,7 +142,25 @@ public class Event {
   }
 
   public String[] getSavingsSuggestions() {
-    String[] suggestions = { "eliminate meal (saves $1,500,000)", "reduce drinks (saves $600,000)" };
+    //String[] suggestions = { "eliminate meal (saves $1,500,000)", "reduce drinks (saves $600,000)" };
+    String[] suggestions = { "", "" };
+    int speakerSavings = getEventSpeakerCost()*getEventSpeakers();
+    int mealSavings = getEventMealCost()*getEventMeals()*getEventSize()*getEventLength();
+    int snackSavings = getEventSnackCost()*getEventSnacks()*getEventSize()*getEventLength();
+    int drinkSavings = getEventDrinkCost()*getEventDrinks()*getEventSize()*getEventLength();
+    int[] savings = { speakerSavings, mealSavings, snackSavings, drinkSavings };
+    Arrays.sort(savings);
+
+    if(savings[3]==drinkSavings) {
+      suggestions[0]="reduce drinks (saves $"+getEventDrinkCost()*getEventSize()*getEventLength()+")";
+    } else if(savings[3]==mealSavings) {
+      suggestions[0]="reduce meals (saves $"+getEventMealCost()*getEventSize()*getEventLength()+")";
+    } else if(savings[3]==snackSavings) {
+      suggestions[0]="reduce snacks (saves $"+getEventSnackCost()*getEventSize()*getEventLength()+")";
+    } else if(savings[3]==speakerSavings) {
+      suggestions[0]="reduce speakers (saves $"+getEventSpeakerCost()*getEventLength()+")";
+    }
+
     return suggestions;
   }
 }
