@@ -135,7 +135,7 @@ public class Event {
     return mEventTotalCost;
   }
 
-  public long getEventCostEach() {
-    return (long) getEventTotalCost();
+  public float getEventCostEach() {
+    return (float) getEventTotalCost()/(float) getEventSize();
   }
 }
