@@ -20,7 +20,7 @@ public class EventTest {
   }
 
   @Test
-  public void getEventDate_returnsDate_String() {
+  public void getEventVenue_returnsDate_String() {
     assertEquals("Oregon Convention Center", mEvent.getEventVenue());
   }
 }
