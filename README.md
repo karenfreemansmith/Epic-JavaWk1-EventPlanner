@@ -25,6 +25,7 @@ A program estimate cost for various types of events
 | drinks provided (alcohol)                          | 2                        | 1, cost - $20/person/day                                            |
 | total cost                                         | n/a                      | $1,154,500                                                          |
 | savings suggester                                  | n/a                      | "eliminate meal (saves $500,000)", "reduce snacks (saves $150,000)" |
+| break even cost per attendee                       | n/a                      | $115.45                                                             |
 
 ## Setup/Installation
 * Clone directory
