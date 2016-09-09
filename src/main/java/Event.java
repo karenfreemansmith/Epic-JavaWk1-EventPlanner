@@ -70,6 +70,6 @@ public class Event {
   }
 
   public int getEventSpeakers() {
-    return mEventSize;
+    return mEventSpeakers;
   }
 }
