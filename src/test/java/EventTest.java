@@ -93,4 +93,9 @@ public class EventTest {
   public void getEventDrinkCost_returnsEventCostPerPersonPerDrink_int() {
     assertEquals(20, mEvent.getEventDrinkCost());
   }
+
+  @Test
+  public void getEventTotalCost_returnsTotalCostOfEvent_int() {
+    assertEquals(1154500, mEvent.getEventTotalCost());
+  }
 }

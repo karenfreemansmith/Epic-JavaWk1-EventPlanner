@@ -112,14 +112,18 @@ public class Event {
   }
 
   public int getEventDrinks() {
-    return mEventMeals;
+    return mEventDrinks;
   }
 
   public int getEventDrinkCost() {
     if(mEventType==1) {
-      return 15;
+      return 20;
     } else {
       return 0;
     }
+  }
+
+  public int getEventTotalCost() {
+    return 0;
   }
 }
