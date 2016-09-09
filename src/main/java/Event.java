@@ -73,6 +73,12 @@ public class Event {
   public int getEventSizeCost() {
     if(mEventType==1) {
       return 12;
+    } else if(mEventType==2) {
+      return 6;
+    } else if(mEventType==3) {
+      return 18;
+    } else if(mEventType==4) {
+      return 2;
     } else {
       return 0;
     }
@@ -85,6 +91,10 @@ public class Event {
   public int getEventSpeakerCost() {
     if(mEventType==1) {
       return 500;
+    } else if(mEventType==2) {
+      return -250; // because at trade shows the speakers pay us to be there!!
+    } else if(mEventType==3) {
+      return 1500;
     } else {
       return 0;
     }
@@ -97,6 +107,12 @@ public class Event {
   public int getEventMealCost() {
     if(mEventType==1) {
       return 50;
+    } else if(mEventType==2) {
+      return 25;
+    } else if(mEventType==3) {
+      return 40;
+    } else if(mEventType==4) {
+      return 12;
     } else {
       return 0;
     }
@@ -109,6 +125,12 @@ public class Event {
   public int getEventSnackCost() {
     if(mEventType==1) {
       return 15;
+    } else if(mEventType==2) {
+      return 10;
+    } else if(mEventType==3) {
+      return 20;
+    } else if(mEventType==4) {
+      return 5;
     } else {
       return 0;
     }
@@ -121,6 +143,12 @@ public class Event {
   public int getEventDrinkCost() {
     if(mEventType==1) {
       return 20;
+    } else if(mEventType==2) {
+      return 10;
+    } else if(mEventType==3) {
+      return 15;
+    } else if(mEventType==4) {
+      return 5;
     } else {
       return 0;
     }
