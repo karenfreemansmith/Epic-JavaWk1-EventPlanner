@@ -6,7 +6,7 @@ public class EventTest {
 
   @Before
   public void initialize() {
-    mEvent = new Event("JavaMania - West", "October 17, 2017", "Oregon Convention Center", 1);
+    mEvent = new Event("JavaMania - West", "October 17, 2017", "Oregon Convention Center", 1, 3);
   }
 
   @Test
@@ -32,5 +32,10 @@ public class EventTest {
   @Test
   public void getEventTypeCost_returnsBaseEventCost_int() {
     assertEquals(1500, mEvent.getEventTypeCost());
+  }
+
+  @Test
+  public void getEventLength_returnsEventLength_int() {
+    assertEquals(3, mEvent.getEventLength());
   }
 }
