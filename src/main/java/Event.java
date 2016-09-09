@@ -135,7 +135,7 @@ public class Event {
     return mEventTotalCost;
   }
 
-  public float getEventCostEach() {
-    return Float.parseFloat(getEventTotalCost());
+  public long getEventCostEach() {
+    return (long) getEventTotalCost();
   }
 }
