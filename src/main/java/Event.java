@@ -42,7 +42,7 @@ public class Event {
   }
 
   public int getEventLength() {
-    return -1;
+    return mEventLength;
   }
 
 
