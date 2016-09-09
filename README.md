@@ -22,10 +22,10 @@ A program estimate cost for various types of events
 | speakers (number of presenters)                    | 60                       | 60, cost - $500/person/day                                          |
 | meals provided                                     | 1                        | 1, cost - $50/person/day                                            |
 | snacks provided (includes non-alcoholic beverages) | 2                        | 2, cost - $15/person/day                                            |
-| drinks provided (alcohol)                          | 2                        | 1, cost - $20/person/day                                            |
-| total cost                                         | n/a                      | $3,454,500                                                          |
+| drinks provided (alcohol)                          | 2                        | 2, cost - $20/person/day                                            |
+| total cost                                         | n/a                      | $4,054,500                                                          |
 | savings suggester                                  | n/a                      | "eliminate meal (saves $1,500,000)", "reduce snacks (saves $450,000)" |
-| break even cost per attendee                       | n/a                      | $345.45                                                             |
+| break even cost per attendee                       | n/a                      | $405.45                                                             |
 
 ## Setup/Installation
 * Clone directory

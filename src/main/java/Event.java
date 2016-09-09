@@ -9,6 +9,7 @@ public class Event {
   private int mEventMeals;
   private int mEventSnacks;
   private int mEventDrinks;
+  private int mEventTotalCost;
 
   public Event(String eventName, String eventDate, String eventVenue, int eventType, int eventLength, int eventSize, int eventSpeakers, int eventMeals, int eventSnacks, int eventDrinks) {
     mEventName = eventName;
@@ -124,6 +125,13 @@ public class Event {
   }
 
   public int getEventTotalCost() {
-    return 0;
+    mEventTotalCost = 0;
+    mEventTotalCost += getEventLengthCost();
+    mEventTotalCost += getEventSize() * getEventSizeCost() * getEventLength();
+    mEventTotalCost += getEventSpeakers() * getEventSpeakerCost() * getEventLength();
+    mEventTotalCost += getEventMeals() * getEventMealCost() * getEventSize() * getEventLength();
+    mEventTotalCost += getEventSnacks() * getEventSnackCost() * getEventSize() * getEventLength();
+    mEventTotalCost += getEventDrinks() * getEventDrinkCost() * getEventSize() * getEventLength();
+    return mEventTotalCost;
   }
 }
