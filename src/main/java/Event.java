@@ -72,4 +72,12 @@ public class Event {
   public int getEventSpeakers() {
     return mEventSpeakers;
   }
+
+  public int getEventSpeakerCost() {
+    if(mEventType==1) {
+      return 12;
+    } else {
+      return 0;
+    }
+  }
 }
