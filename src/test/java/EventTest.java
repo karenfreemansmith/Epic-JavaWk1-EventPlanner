@@ -98,4 +98,10 @@ public class EventTest {
   public void getEventTotalCost_returnsTotalCostOfEvent_int() {
     assertEquals(4054500, mEvent.getEventTotalCost());
   }
+
+  @Test
+  public void getEventCostEach_returnsTotalCostOfEventPerPerson_int() {
+    assertEquals(405.45, mEvent.getEventCostEach());
+  }
+
 }

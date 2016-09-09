@@ -134,4 +134,8 @@ public class Event {
     mEventTotalCost += getEventDrinks() * getEventDrinkCost() * getEventSize() * getEventLength();
     return mEventTotalCost;
   }
+
+  public float getEventCostEach() {
+    return Float.parseFloat(getEventTotalCost());
+  }
 }
