@@ -10,14 +10,21 @@ A program estimate cost for various types of events
 ![project Screenshot](/screenshot.jpg)
 
 ### Specifications:
-|              Behavior              | Input |       Output       |
-|:----------------------------------:|:-----:|:------------------:|
-|                                    |       |                    |
-|                                    |       |                    |
-|                                    |       |                    |
-|                                    |       |                    |
-|                                    |       |                    |
-|                                    |       |                    |
+| Behavior                                           | Input                    |  Output                                                             |
+|----------------------------------------------------|--------------------------|---------------------------------------------------------------------|
+| Create event with properties of:                   |                          |                                                                     |
+| name                                               | JavaMania - West         | JavaMania - West                                                    |
+| date                                               | October 17, 2017         | October 17, 2017                                                    |
+| venue                                              | Oregon Convention Center | Oregon Convention Center                                            |
+| type (conference, wedding, etc)                    | Conference               | Conference, base cost = $1500/day                                   |
+| days                                               | 3                        | base cost * days = $4500                                            |
+| size (number of people attending)                  | 10,000                   | 10000, base cost - $12/person/day                                   |
+| speakers (number of presenters)                    | 60                       | 60, cost - $500/person/day                                          |
+| meals provided                                     | 1                        | 1, cost - $50/person/day                                            |
+| snacks provided (includes non-alcoholic beverages) | 2                        | 2, cost - $15/person/day                                            |
+| drinks provided (alcohol)                          | 2                        | 1, cost - $20/person/day                                            |
+| total cost                                         | n/a                      | $1,154,500                                                          |
+| savings suggester                                  | n/a                      | "eliminate meal (saves $500,000)", "reduce snacks (saves $150,000)" |
 
 ## Setup/Installation
 * Clone directory
