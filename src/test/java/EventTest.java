@@ -104,4 +104,10 @@ public class EventTest {
     assertEquals(405.45, mEvent.getEventCostEach(), 0.005);
   }
 
+  @Test
+  public void getSavingsSuggestions_returnsTwoSuggestions_Array() {
+    String[] suggestions = { "eliminate meal (saves $1,500,000)", "reduce snacks (saves $450,000)" };
+    assertEquals(suggestions, mEvent.getSavingsSuggestions());
+  }
+
 }

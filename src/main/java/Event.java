@@ -138,4 +138,9 @@ public class Event {
   public float getEventCostEach() {
     return (float) getEventTotalCost()/(float) getEventSize();
   }
+
+  public String[] getSavingsSuggestions() {
+    String[] suggestions = { "eliminate meal (saves $1,500,000)", "reduce drinks (saves $600,000)" };
+    return suggestions;
+  }
 }
