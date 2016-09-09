@@ -24,6 +24,10 @@ public class Event {
   }
 
   public String getEventType() {
-    return "";
+    if(mEventType==1) {
+      return "Conference";
+    } else {
+      return "not a recognized event type";
+    }
   }
 }
