@@ -68,4 +68,9 @@ public class EventTest {
   public void getEventMeals_returnsNumberOfMealsPerDay_int() {
     assertEquals(1, mEvent.getEventMeals());
   }
+
+  @Test
+  public void getEventMealCost_returnsEventSpeakerCostPerPersonPerMeal_int() {
+    assertEquals(500, mEvent.getEventMealCost());
+  }
 }

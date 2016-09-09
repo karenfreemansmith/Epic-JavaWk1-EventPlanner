@@ -84,6 +84,14 @@ public class Event {
   }
 
   public int getEventMeals() {
-    return mEventSpeakers;
+    return mEventMeals;
+  }
+
+  public int getEventMealCost() {
+    if(mEventType==1) {
+      return 505;
+    } else {
+      return 0;
+    }
   }
 }
