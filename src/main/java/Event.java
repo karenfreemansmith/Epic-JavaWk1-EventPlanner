@@ -56,7 +56,7 @@ public class Event {
   }
 
   public int getEventSize() {
-    return mEventLength;
+    return mEventSize;
   }
 
 }
