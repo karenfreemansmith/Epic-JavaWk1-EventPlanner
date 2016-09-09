@@ -75,7 +75,7 @@ public class Event {
 
   public int getEventSpeakerCost() {
     if(mEventType==1) {
-      return 12;
+      return 500;
     } else {
       return 0;
     }
