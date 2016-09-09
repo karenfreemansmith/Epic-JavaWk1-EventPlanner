@@ -13,4 +13,9 @@ public class EventTest {
   public void getEventName_returnsName_String() {
     assertEquals("JavaMania - West", mEvent.getEventName());
   }
+
+  @Test
+  public void getEventDate_returnsDate_String() {
+    assertEquals("October 17, 2017", mEvent.getEventDate());
+  }
 }
