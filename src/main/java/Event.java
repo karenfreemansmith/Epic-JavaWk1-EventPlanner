@@ -4,13 +4,15 @@ public class Event {
   private String mEventVenue;
   private int mEventType;
   private int mEventLength; //(length in days, 0 valid input for partial day event lasting less than 6 hours total)
+  private int mEventSize;
 
-  public Event(String eventName, String eventDate, String eventVenue, int eventType, int eventLength) {
+  public Event(String eventName, String eventDate, String eventVenue, int eventType, int eventLength, int eventSize) {
     mEventName = eventName;
     mEventDate = eventDate;
     mEventVenue = eventVenue;
     mEventType = eventType;
     mEventLength = eventLength;
+    mEventSize = eventSize;
   }
 
   public String getEventName() {
@@ -51,6 +53,10 @@ public class Event {
     } else {
       return mEventLength*getEventTypeCost();
     }
+  }
+
+  public int getEventSize() {
+    return mEventLength;
   }
 
 }
