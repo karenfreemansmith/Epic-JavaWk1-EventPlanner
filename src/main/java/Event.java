@@ -152,13 +152,55 @@ public class Event {
     Arrays.sort(savings);
 
     if(savings[3]==drinkSavings) {
-      suggestions[0]="reduce drinks (saves $"+getEventDrinkCost()*getEventSize()*getEventLength()+")";
+      if(mEventDrinks>1) {
+        suggestions[0]=String.format("reduce drinks (saves $%d)", getEventDrinkCost()*getEventSize()*getEventLength());
+      } else {
+        suggestions[0]=String.format("eliminate drink (saves $%d)", getEventDrinkCost()*getEventSize()*getEventLength());
+      }
     } else if(savings[3]==mealSavings) {
-      suggestions[0]="reduce meals (saves $"+getEventMealCost()*getEventSize()*getEventLength()+")";
+      if(mEventMeals>1) {
+        suggestions[0]=String.format("reduce meals (saves $%d)", getEventMealCost()*getEventSize()*getEventLength());
+      } else {
+        suggestions[0]=String.format("eliminate meal (saves $%d)", getEventMealCost()*getEventSize()*getEventLength());
+      }
     } else if(savings[3]==snackSavings) {
-      suggestions[0]="reduce snacks (saves $"+getEventSnackCost()*getEventSize()*getEventLength()+")";
+      if(mEventSnacks>1) {
+        suggestions[0]=String.format("reduce snacks (saves $%d)", getEventSnackCost()*getEventSize()*getEventLength());
+      } else {
+        suggestions[0]=String.format("eliminate snack (saves $%d)", getEventSnackCost()*getEventSize()*getEventLength());
+      }
     } else if(savings[3]==speakerSavings) {
-      suggestions[0]="reduce speakers (saves $"+getEventSpeakerCost()*getEventLength()+")";
+      if(mEventSpeakers>1) {
+        suggestions[0]=String.format("reduce speakers (saves $%d)", mEventSpeakers/2*getEventSpeakerCost()*getEventLength());
+      } else {
+        suggestions[0]=String.format("eliminate speaker (saves $%d)", getEventSpeakerCost()*getEventLength());
+      }
+    }
+
+    if(savings[2]==drinkSavings) {
+      if(mEventDrinks>1) {
+        suggestions[1]=String.format("reduce drinks (saves $%d)", getEventDrinkCost()*getEventSize()*getEventLength());
+      } else {
+        suggestions[1]=String.format("eliminate drink (saves $%d)", getEventDrinkCost()*getEventSize()*getEventLength());
+      }
+    } else if(savings[2]==mealSavings) {
+      if(mEventMeals>1) {
+        suggestions[1]=String.format("reduce meals (saves $%d)", getEventMealCost()*getEventSize()*getEventLength());
+      } else {
+        suggestions[1]=String.format("eliminate meal (saves $%d)", getEventMealCost()*getEventSize()*getEventLength());
+      }
+    } else if(savings[2]==snackSavings) {
+      if(mEventSnacks>1) {
+        suggestions[1]=String.format("reduce snacks (saves $%d)", getEventSnackCost()*getEventSize()*getEventLength());
+      } else {
+        suggestions[1]=String.format("eliminate snack (saves $%d)", getEventSnackCost()*getEventSize()*getEventLength());
+      }
+    } else if(savings[2]==speakerSavings) {
+      if(mEventSpeakers>1) {
+        suggestions[1]=String.format("reduce speakers (saves $%d)", mEventSpeakers/2*getEventSpeakerCost()*getEventLength());
+      } else {
+        suggestions[1]=String.format("eliminate speaker (saves $%d)", getEventSpeakerCost()*getEventLength());
+      }
     }
 
     return suggestions;
