@@ -30,4 +30,12 @@ public class Event {
       return "not a recognized event type";
     }
   }
+
+  public String getEventTypeCost() {
+    if(mEventType==0) {
+      return 1500;
+    } else {
+      return 0;
+    }
+  }
 }

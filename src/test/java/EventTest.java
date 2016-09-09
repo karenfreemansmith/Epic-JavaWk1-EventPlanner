@@ -28,4 +28,9 @@ public class EventTest {
   public void getEventType_returnsType_String() {
     assertEquals("Conference", mEvent.getEventType());
   }
+
+  @Test
+  public void getEventTypeCost_returnsBaseEventCost_int() {
+    assertEquals(1500, mEvent.getEventTypeCost());
+  }
 }
