@@ -45,11 +45,11 @@ public class Event {
     return mEventLength;
   }
 
-  public int getEventTypeCost() {
-    if(mEventLength==1) {
-      return Integer.parseInt(getEventTypeCost()/3*2);
+  public int getEventLengthCost() {
+    if(mEventLength==3) {
+      return getEventTypeCost()/3*2;
     } else {
-      return mEventLength*getEventTypeCost();
+      return mEventLength*getEventTypeCost()-500;
     }
   }
 
