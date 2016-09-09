@@ -32,7 +32,7 @@ public class Event {
   }
 
   public int getEventTypeCost() {
-    if(mEventType==0) {
+    if(mEventType==1) {
       return 1500;
     } else {
       return 0;
