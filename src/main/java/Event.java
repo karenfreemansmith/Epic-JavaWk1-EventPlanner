@@ -60,7 +60,7 @@ public class Event {
   }
 
   public int getEventSizeCost() {
-    if(mEventType==0) {
+    if(mEventType==1) {
       return 12;
     } else {
       return 0;
