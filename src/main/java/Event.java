@@ -6,6 +6,6 @@ public class Event {
   }
 
   public String getEventName() {
-    return "";
+    return mEventName;
   }
 }
