@@ -6,7 +6,7 @@ public class EventTest {
 
   @Before
   public void initialize() {
-    mEvent = new Event("JavaMania - West", "October 17, 2017");
+    mEvent = new Event("JavaMania - West", "October 17, 2017", "Oregon Convention Center");
   }
 
   @Test
@@ -17,5 +17,10 @@ public class EventTest {
   @Test
   public void getEventDate_returnsDate_String() {
     assertEquals("October 17, 2017", mEvent.getEventDate());
+  }
+
+  @Test
+  public void getEventDate_returnsDate_String() {
+    assertEquals("Oregon Convention Center", mEvent.getEventVenue());
   }
 }
