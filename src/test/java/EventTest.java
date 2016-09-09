@@ -6,7 +6,7 @@ public class EventTest {
 
   @Before
   public void initialize() {
-    mEvent = new Event("JavaMania - West");
+    mEvent = new Event("JavaMania - West", "October 17, 2017");
   }
 
   @Test

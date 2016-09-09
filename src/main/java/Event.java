@@ -2,7 +2,7 @@ public class Event {
   private String mEventName;
   private String mEventDate;
 
-  public Event(String eventName, eventDate) {
+  public Event(String eventName, String eventDate) {
     mEventName = eventName;
   }
 
