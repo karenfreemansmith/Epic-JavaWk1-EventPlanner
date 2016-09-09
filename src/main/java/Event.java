@@ -8,8 +8,9 @@ public class Event {
   private int mEventSpeakers;
   private int mEventMeals;
   private int mEventSnacks;
+  private int mEventDrinks;
 
-  public Event(String eventName, String eventDate, String eventVenue, int eventType, int eventLength, int eventSize, int eventSpeakers, int eventMeals, int eventSnacks) {
+  public Event(String eventName, String eventDate, String eventVenue, int eventType, int eventLength, int eventSize, int eventSpeakers, int eventMeals, int eventSnacks, int eventDrinks) {
     mEventName = eventName;
     mEventDate = eventDate;
     mEventVenue = eventVenue;
@@ -19,6 +20,7 @@ public class Event {
     mEventSpeakers = eventSpeakers;
     mEventMeals = eventMeals;
     mEventSnacks = eventSnacks;
+    mEventDrinks = eventDrinks;
   }
 
   public String getEventName() {
@@ -98,12 +100,24 @@ public class Event {
   }
 
   public int getEventSnacks() {
-    return mEventMeals;
+    return mEventSnacks;
   }
 
   public int getEventSnackCost() {
     if(mEventType==1) {
-      return 50;
+      return 15;
+    } else {
+      return 0;
+    }
+  }
+
+  public int getEventDrinks() {
+    return mEventMeals;
+  }
+
+  public int getEventDrinkCost() {
+    if(mEventType==1) {
+      return 15;
     } else {
       return 0;
     }
