@@ -46,10 +46,10 @@ public class Event {
   }
 
   public int getEventLengthCost() {
-    if(mEventLength==3) {
+    if(mEventLength==0) {
       return getEventTypeCost()/3*2;
     } else {
-      return mEventLength*getEventTypeCost()-500;
+      return mEventLength*getEventTypeCost();
     }
   }
 
