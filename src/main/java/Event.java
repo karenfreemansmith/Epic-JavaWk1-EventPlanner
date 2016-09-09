@@ -59,4 +59,12 @@ public class Event {
     return mEventSize;
   }
 
+  public int getEventSizeCost() {
+    if(mEventType==0) {
+      return 12;
+    } else {
+      return 0;
+    }
+  }
+
 }

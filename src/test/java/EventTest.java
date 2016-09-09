@@ -48,4 +48,9 @@ public class EventTest {
   public void getEventSize_returnsEventSize_int() {
     assertEquals(10000, mEvent.getEventSize());
   }
+
+  @Test
+  public void getEventSizeCost_returnsEventSizeCostPerPersonPerDay_int() {
+    assertEquals(12, mEvent.getEventSizeCost());
+  }
 }
