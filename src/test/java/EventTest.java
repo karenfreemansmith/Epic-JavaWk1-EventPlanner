@@ -38,4 +38,10 @@ public class EventTest {
   public void getEventLength_returnsEventLength_int() {
     assertEquals(3, mEvent.getEventLength());
   }
+
+
+  @Test
+  public void getEventLengthCost_returnsEventLengthBaseCost_int() {
+    assertEquals(4500, mEvent.getEventLengthCost());
+  }
 }
