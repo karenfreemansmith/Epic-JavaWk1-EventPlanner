@@ -31,7 +31,7 @@ public class Event {
     }
   }
 
-  public String getEventTypeCost() {
+  public int getEventTypeCost() {
     if(mEventType==0) {
       return 1500;
     } else {
